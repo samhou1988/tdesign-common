@@ -34,7 +34,7 @@ export default function xhr({
     formData.append(name, f.raw);
   });
 
-  xhr.open('post', action, true);
+  xhr.open(method, action, true);
 
   // custom request headers
   Object.keys(headers).forEach((key) => {
